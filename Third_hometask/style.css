@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1219px;
+    padding: 0 55px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background: #007765;
+    height: 84px;
+    position: fixed;
+    top: 0;
+    z-index: 21;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 184px;
+    height: 45px;
+    background-image: url("images/logo.png");
+    background-size: cover;
+}
+
+.menu {
+    padding-top: 9px;
+    margin-right: 54px;
+}
+
+.vl {
+    border-left: 3px solid #FFFFFF;
+    height: 24px;
+    margin: 0 8px;
+}
+
+.links__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.link__menu {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.link__menu:hover {
+    font-size: 30px;
+}
+
+.banner {
+    background-image: url("images/banner.png");
+    background-size: cover;
+    background-position: center center;
+    margin-top: 84px;
+    padding: 160px 0;
+}
+
+.banner__text {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner__information {
+    padding: 128px 0px;
+    background-image: url("images/section.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner__text__information {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+
+.problem, .team, .about{
+    background-color: #EEEEEE;
+    background-size: auto;
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+
+.about {
+    background-color: #FFFFFF;
+    background-size: auto;
+}
+
+p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.about img {
+    width: 115px;
+    height: 115px;
+    float: left;
+    margin-right: 48px;
+}
+
+.card__members {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card__member {
+    text-align: center;
+    width: 350px;
+    height: 283px;
+}
+
+.logo__member {
+    margin-bottom: 12px;
+}
+
+.logo__member img {
+    box-sizing: border-box;
+    width: 168px;
+    height: 168px;
+}
+
+.name__member {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+}
+
+.position__member {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.footer {
+    height: 176px;
+    background: #333333;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content__footer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 48px auto;
+}
