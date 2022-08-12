@@ -13,25 +13,15 @@
 <body>
 <header class="header">
     <div class="container-fluid">
-        <div class="row">
-            <div class="logo ">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div>
-                <button class="btn__sing-in">Войти</button>
-            </div>
-            <div class="basket">
-                <img src="images/basket.png" alt="logo">
-            </div>
+        <div class="header__logo ">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="buttons">
+            <button class="btn__sing-in">Войти</button>
+            <button class="btn__basket"></button>
         </div>
     </div>
 </header>
-<section class="search">
-    <div class="container-fluid col">
-
-    </div>
-</section>
-
 <section class="content">
     <div class="container-fluid">
         <div class="row">
@@ -146,14 +136,19 @@
 
 <footer class="footer">
     <div class="container-fluid">
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
+        <div class="footer__logo"></div>
         <hr>
         <div class="footer__second__floor row">
             <div class="col-lg-4 col-md-4 col-xs-12">
-                <p><span>#</span>UberEats</p>
-                <img src="images/facebook.png" alt="">
-                <img src="images/twitter.png" alt="">
-                <img src="images/instagram.png" alt="">
+                <select class="language" size="1">
+                    <option value="rus" class="icon__world">Русский</option>
+                </select>
+                <div class="social-networks">
+                    <p class="reference__social-networks"><span>#</span>UberEats</p>
+                    <img class="img__social-networks" src="images/facebook.png" alt="facebook">
+                    <img class="img__social-networks" src="images/twitter.png" alt="twitter">
+                    <img class="img__social-networks" src="images/instagram.png" alt="instagram">
+                </div>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <p>Об UberEats</p>
@@ -169,26 +164,31 @@
         </div>
         <hr>
         <div class="row">
-            <div class="reference__store right col-lg-6 col-md-6 col-xs-6">
-                <img src="images/App_Store.png" alt="">
+            <div class="reference__store reference__store__right col-lg-6 col-md-6 col-xs-6">
+                <img src="images/App_Store.png" alt="app-store">
             </div>
-            <div class="reference__store left col-lg-6 col-md-6 col-xs-6">
-                <img src="images/Play_Market.png" alt="">
+            <div class="reference__store reference__store__left col-lg-6 col-md-6 col-xs-6">
+                <img src="images/Play_Market.png" alt="play-market">
             </div>
         </div>
         <hr>
         <div class="footer__footer row">
             <div class="col-lg-4 col-md-4 col-xs-12">
-                © 2017 Uber Technologies Inc.
+                <p>© 2017 Uber Technologies Inc.</p>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
-                Обработка персональных данных
+                <p>Обработка персональных данных</p>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-12">
-                Пользовательское соглашение
+                <p>Пользовательское соглашение</p>
             </div>
         </div>
     </div>
 </footer>
+
+<div class="gototop">
+    <a href="#" style="text-decoration: none"><p class="arrow">🡑</p>
+    </a>
+</div>
 </body>
 </html>
