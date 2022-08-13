@@ -8,20 +8,20 @@ body {
     font-style: normal;
 }
 
-@media only screen and (min-width: 576px) {
-    .container-fluid {
+@media (min-width: 576px) {
+    .container {
         margin: 0;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .container-fluid {
+@media (min-width: 768px) {
+    .container {
         margin: 0;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .container-fluid {
+@media (min-width: 992px) {
+    .container {
         margin-right: 87px;
         margin-left: 80px;
     }
@@ -39,7 +39,7 @@ body {
     z-index: 1000;
 }
 
-.header > .container-fluid {
+.header > .container {
     display: flex;
     justify-content: space-between;
 }
@@ -259,7 +259,7 @@ hr {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media only screen and (max-width: 575px) {
+@media (max-width: 575px) {
     .btn__basket {
         display: none;
     }
@@ -286,7 +286,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .reference__store img {
         height: 40px;
     }
@@ -435,7 +435,7 @@ hr {
     vertical-align: middle;
 }
 
-@media only screen and (max-width: 575px) {
+@media (max-width: 575px) {
     .banner {
         height: 255px;
         width: 100%;
@@ -504,7 +504,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .banner {
         height: 256px;
     }
@@ -522,7 +522,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 576px){
+@media (min-width: 576px){
    .snack__title {
         margin-top: 16px;
     }

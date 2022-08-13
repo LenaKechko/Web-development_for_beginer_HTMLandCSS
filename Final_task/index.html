@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Uber Eats</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flexboxgrid2.css">
+    <!--    <link rel="stylesheet" href="css/flexboxgrid2.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -12,7 +13,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="container-fluid">
+    <div class="container">
         <div class="header__logo ">
             <img src="images/logo.png" alt="logo">
         </div>
@@ -23,14 +24,14 @@
     </div>
 </header>
 <section class="content">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <input class="input__search col-lg-12 col-md-12 col-xs-12" type="text"
+            <input class="input__search col-xl-12 col-md-12 col-xs-12" type="text"
                    placeholder="Поиск по ресторанам и кухням">
-            <h2 class="col-lg-12 col-md-12 col-xs-12">Рестораны в Москве</h2>
+            <h2 class="col-xl-12 col-md-12 col-xs-12">Рестораны в Москве</h2>
         </div>
         <div class="cards row">
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/Macdonalds.png" alt="mac" class="card__img">
                 </div>
@@ -41,7 +42,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/DimSum.png" alt="DimSum" class="card__img">
                 </div>
@@ -52,7 +53,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/ДвижОК.png" alt="ДвижОК" class="card__img">
                 </div>
@@ -63,7 +64,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/NHA.png" alt="NHA" class="card__img">
                 </div>
@@ -74,7 +75,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/Точка Дзы.png" alt="ТочкаДзы" class="card__img">
                 </div>
@@ -85,7 +86,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/Cinnabon.png" alt="Cinnabon" class="card__img">
                 </div>
@@ -96,7 +97,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/PIZZELOVE.png" alt="PIZZELOVE" class="card__img">
                 </div>
@@ -107,7 +108,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/Zю кафе.png" alt="Zю кафе" class="card__img">
                 </div>
@@ -118,7 +119,7 @@
                 </div>
                 <a href="restaurant.html" class="link__card"></a>
             </div>
-            <div class="card col-lg-4 col-md-6 col-xs-12">
+            <div class="card col-xl-4 col-md-6 col-xs-12">
                 <div>
                     <img src="images/Bar BQ Cafe.png" alt="Bar BQ Cafe" class="card__img">
                 </div>
@@ -135,11 +136,11 @@
 </section>
 
 <footer class="footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="footer__logo"></div>
         <hr>
         <div class="footer__second__floor row">
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <div class="language col-xl-8 col-md-9 col-xs-7">
                     <img src="images/world.png" alt="world">
                     <select class="select__lang" size="1">
@@ -154,12 +155,12 @@
                     <img class="img__social-networks" src="images/instagram.png" alt="instagram">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <p>Об UberEats</p>
                 <p>Станьте партнёром по доставке</p>
                 <p>Станьте парнёром-рестораном</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <p>Все города</p>
                 <p>Цены</p>
                 <p>Помощь</p>
@@ -168,22 +169,22 @@
         </div>
         <hr>
         <div class="row">
-            <div class="reference__store reference__store__right col-lg-6 col-md-6 col-xs-6">
+            <div class="reference__store reference__store__right col-xl-6 col-md-6 col-xs-6">
                 <img src="images/App_Store.png" alt="app-store">
             </div>
-            <div class="reference__store reference__store__left col-lg-6 col-md-6 col-xs-6">
+            <div class="reference__store reference__store__left col-xl-6 col-md-6 col-xs-6">
                 <img src="images/Play_Market.png" alt="play-market">
             </div>
         </div>
         <hr>
         <div class="footer__footer row">
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <p>© 2017 Uber Technologies Inc.</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <p>Обработка персональных данных</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-xl-4 col-md-4 col-xs-12">
                 <p>Пользовательское соглашение</p>
             </div>
         </div>
