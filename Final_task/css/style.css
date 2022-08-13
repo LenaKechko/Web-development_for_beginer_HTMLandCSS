@@ -29,7 +29,7 @@ body {
 
 .header {
     width: 100%;
-    margin-bottom: 72px;
+    /*margin-bottom: 72px;*/
     box-sizing: border-box;
     background: #FFFFFF;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
@@ -259,8 +259,8 @@ hr {
 }
 
 @media only screen and (max-width: 576px) {
-    .basket {
-        visibility: hidden;
+    .btn__basket {
+        display: none;
     }
 
     .reference__store img {
@@ -298,12 +298,12 @@ hr {
 
 /*css для страницы трактира "Пушкин"*/
 .banner {
-    background-image: url("../images/Restaurant.png");
-    background-size: cover;
-    /*background-position: center center;*/
     margin-top: 90px;
     width: 100%;
     height: 364px;
+    background-image: url("../images/Restaurant.png");
+    background-size: cover;
+    background-position: center center;
 }
 
 .card__restaurant {
@@ -380,11 +380,19 @@ hr {
     display: flex;
     height: 160px;
     justify-content: space-between;
-    margin-bottom: 49px;
-    padding-left: 16px;
-    /*margin-right: 8px;*/
+    /*margin: 32px 8px 49px;*/
+    margin-bottom: 17px;
+    margin-right: 16px;
     margin-top: 32px;
     position: relative;
+}
+
+.snack:hover {
+    background-color: #75757533;
+}
+
+.snack__info {
+    padding-left: 16px;
 }
 
 .snack__title {
@@ -414,19 +422,25 @@ hr {
 }
 
 .snack__img {
-    height: 160px;
+    height: 100%;
     vertical-align: middle;
 }
 
 @media (max-width: 576px) {
     .banner {
         height: 255px;
-
+        width: 100%;
+        /*background-size: contain;*/
+        /*background-repeat: no-repeat;*/
+        /*background: url("../images/Restaurant.png");*/
+        /*background-size: cover;*/
     }
+
     .card__restaurant {
         padding: 24px 49px;
         position: relative;
         top: 131px;
+        margin: 0 auto;
     }
 
     .name__restaurant {
@@ -445,9 +459,19 @@ hr {
         visibility: hidden;
     }
 
+    .links__menu {
+        font-size: 0px;
+    }
+
+    .menu__line {
+        visibility: hidden;
+    }
+
     .snack {
         height: 102px;
-        margin-bottom: 16px;
+        margin-top: 16px;
+        border: none;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
     }
 
     .snack__description {
@@ -466,12 +490,16 @@ hr {
     }
 
     .snack__img {
-        height: 102px;
+        height: 100%;
         vertical-align: middle;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .banner {
+        height: 256px;
+    }
+
     .card__restaurant {
         padding: 38px 48px;
     }
@@ -481,13 +509,12 @@ hr {
     }
 
     .snack {
-        margin-bottom: 32px;
-
+        margin-bottom: 0px;
     }
 }
 
 @media (min-width: 576px) {
-    .snack__title {
+   .snack__title {
         margin-top: 16px;
     }
 
