@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto';
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 576px) {
